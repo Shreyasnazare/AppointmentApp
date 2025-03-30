@@ -1,0 +1,386 @@
+{
+  "Version": 1,
+  "WorkspaceRootPath": "E:\\Project Self\\AppointmentAPI\\",
+  "Documents": [
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:controllers\\customercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\services\\implementation\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:services\\implementation\\customerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:repository\\implementation\\repository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\services\\implementation\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:services\\implementation\\service.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\models\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:models\\dto\\customerdto.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\repository\\implementation\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:repository\\implementation\\customerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:dal\\appdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\services\\configuredependencies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:services\\configuredependencies.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\services\\interface\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:services\\interface\\icustomerservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:appsettings.json||{90A6B3A7-C1A3-4009-A288-E2FF89E96FA0}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\services\\interface\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:services\\interface\\iservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:repository\\interface\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\repository\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:repository\\interface\\icustomerrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:models\\customer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|e:\\project self\\appointmentapi\\dal\\entity\\customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{1DFEB5DA-1A24-49E6-B4C0-AC7B5E6E0149}|AppointmentAPI.csproj|solutionrelative:dal\\entity\\customerdetails.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    }
+  ],
+  "DocumentGroupContainers": [
+    {
+      "Orientation": 0,
+      "VerticalTabListWidth": 256,
+      "DocumentGroups": [
+        {
+          "DockedWidth": 200,
+          "SelectedChildIndex": 21,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{e1b7d1f8-9b3c-49b1-8f4f-bfc63a88835d}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:132:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:11:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:12:0:{2456bd12-ecf7-4988-a4a6-67d49173f565}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:128:0:{13b12e3e-c1b4-4539-9371-4fe9a0d523fc}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:129:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:131:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:130:0:{1fc202d4-d401-403c-9834-5b218574bb67}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{aa2115a1-9712-457b-9047-dbb71ca2cdd2}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{1c4feeaa-4718-4aa9-859d-94ce25d182ba}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{3ae79031-e1bc-11d0-8f78-00a0c9110057}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:133:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:134:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:135:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:136:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:137:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Bookmark",
+              "Name": "ST:138:0:{116d2292-e37d-41cd-a077-ebacac4c8cc4}"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "CustomerController.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Controllers\\CustomerController.cs",
+              "RelativeDocumentMoniker": "Controllers\\CustomerController.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Controllers\\CustomerController.cs",
+              "RelativeToolTip": "Controllers\\CustomerController.cs",
+              "ViewState": "AgIAACUAAAAAAAAAAAAtwC0AAAArAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T16:18:43.719Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "CustomerService.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Services\\Implementation\\CustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\Implementation\\CustomerService.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Services\\Implementation\\CustomerService.cs",
+              "RelativeToolTip": "Services\\Implementation\\CustomerService.cs",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAAABMAAAAMAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T16:06:08.378Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "CustomerDTO.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Models\\DTO\\CustomerDTO.cs",
+              "RelativeDocumentMoniker": "Models\\DTO\\CustomerDTO.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Models\\DTO\\CustomerDTO.cs",
+              "RelativeToolTip": "Models\\DTO\\CustomerDTO.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAtwC8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:18:48.229Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Service.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Services\\Implementation\\Service.cs",
+              "RelativeDocumentMoniker": "Services\\Implementation\\Service.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Services\\Implementation\\Service.cs",
+              "RelativeToolTip": "Services\\Implementation\\Service.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAABAAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:23:26.329Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
+              "Title": "Repository.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Repository\\Implementation\\Repository.cs",
+              "RelativeDocumentMoniker": "Repository\\Implementation\\Repository.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Repository\\Implementation\\Repository.cs",
+              "RelativeToolTip": "Repository\\Implementation\\Repository.cs",
+              "ViewState": "AgIAABoAAAAAAAAAAAAwwCUAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:20:37.828Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 5,
+              "Title": "CustomerRepository.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Repository\\Implementation\\CustomerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Implementation\\CustomerRepository.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Repository\\Implementation\\CustomerRepository.cs",
+              "RelativeToolTip": "Repository\\Implementation\\CustomerRepository.cs",
+              "ViewState": "AgIAAAUAAAAAAAAAAAAIwBEAAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:28:51.617Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 6,
+              "Title": "Program.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T17:12:17.235Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 7,
+              "Title": "AppDBContext.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\DAL\\AppDBContext.cs",
+              "RelativeDocumentMoniker": "DAL\\AppDBContext.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\DAL\\AppDBContext.cs",
+              "RelativeToolTip": "DAL\\AppDBContext.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:16:41.476Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 8,
+              "Title": "ConfigureDependencies.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Services\\ConfigureDependencies.cs",
+              "RelativeDocumentMoniker": "Services\\ConfigureDependencies.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Services\\ConfigureDependencies.cs",
+              "RelativeToolTip": "Services\\ConfigureDependencies.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAQwBwAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T17:05:22.911Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 9,
+              "Title": "ICustomerService.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Services\\Interface\\ICustomerService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\ICustomerService.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Services\\Interface\\ICustomerService.cs",
+              "RelativeToolTip": "Services\\Interface\\ICustomerService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAUAAABBAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T16:03:34.167Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 10,
+              "Title": "appsettings.json",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\appsettings.json",
+              "RelativeDocumentMoniker": "appsettings.json",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\appsettings.json",
+              "RelativeToolTip": "appsettings.json",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.001642|",
+              "WhenOpened": "2025-03-30T17:11:26.062Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 11,
+              "Title": "IService.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Services\\Interface\\IService.cs",
+              "RelativeDocumentMoniker": "Services\\Interface\\IService.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Services\\Interface\\IService.cs",
+              "RelativeToolTip": "Services\\Interface\\IService.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAA8AAAAIAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:22:42.126Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 12,
+              "Title": "IRepository.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Repository\\Interface\\IRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interface\\IRepository.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Repository\\Interface\\IRepository.cs",
+              "RelativeToolTip": "Repository\\Interface\\IRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAoAAAATAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:21:13.744Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 13,
+              "Title": "ICustomerRepository.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Repository\\Interface\\ICustomerRepository.cs",
+              "RelativeDocumentMoniker": "Repository\\Interface\\ICustomerRepository.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Repository\\Interface\\ICustomerRepository.cs",
+              "RelativeToolTip": "Repository\\Interface\\ICustomerRepository.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAcAAAAHAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:26:03.847Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 14,
+              "Title": "Customer.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\Models\\Customer.cs",
+              "RelativeDocumentMoniker": "Models\\Customer.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\Models\\Customer.cs",
+              "RelativeToolTip": "Models\\Customer.cs",
+              "ViewState": "AgIAAA4AAAAAAAAAAAAwwBYAAAApAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:17:58.198Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 15,
+              "Title": "CustomerDetails.cs",
+              "DocumentMoniker": "E:\\Project Self\\AppointmentAPI\\DAL\\Entity\\CustomerDetails.cs",
+              "RelativeDocumentMoniker": "DAL\\Entity\\CustomerDetails.cs",
+              "ToolTip": "E:\\Project Self\\AppointmentAPI\\DAL\\Entity\\CustomerDetails.cs",
+              "RelativeToolTip": "DAL\\Entity\\CustomerDetails.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAgAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-03-30T15:15:01.777Z",
+              "EditorCaption": ""
+            }
+          ]
+        },
+        {
+          "DockedWidth": 65,
+          "SelectedChildIndex": -1,
+          "Children": [
+            {
+              "$type": "Bookmark",
+              "Name": "ST:0:0:{6324226f-61b6-4f28-92ee-18d4b5fe1e48}"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}
