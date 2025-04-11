@@ -36,10 +36,10 @@ app.UseRouting();
 
 app.UseAuthorization();
 
-//app.MapControllers();
+app.MapControllers();
 
-app.MapControllerRoute(
-    name: "default",
-    pattern: "{controller=Menu}/{action=Index}/{id?}");
+//app.MapControllerRoute(
+//    name: "default",
+//    pattern: "{controller=Menu}/{action=Index}/{id?}");
 
 app.Run();

@@ -1,4 +1,5 @@
-﻿using AppointmentAPI.DAL.Entity;
+﻿using AppointmentAPI.DAL.Entity.Customer;
+using AppointmentAPI.DAL.Entity.Doctor;
 using Microsoft.EntityFrameworkCore;
 
 namespace AppointmentAPI.DAL
@@ -10,6 +11,8 @@ namespace AppointmentAPI.DAL
         { }
 
         public DbSet<CustomerDetails> Customer { get; set; }
+
+        public DbSet<DoctorDetails> DoctorDetails { get; set; }
 
     }
 }
