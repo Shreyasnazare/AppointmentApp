@@ -97,6 +97,31 @@ namespace AppointmentAPI.Controllers
 
         }
 
-       
+
+
+        [HttpPost("UpdateCustomer")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(Response))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult UpdateCustomer([FromBody] CustomerModel customer)
+        {
+
+            try
+            {
+               
+                    
+                 var res =  _custService.UpdateCustomer(customer);
+                return Ok(res);
+                
+
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An unexpected error occurred at UpdateCustomer.", error = ex.Message });
+            }
+
+        }
+
+
     }
 }

@@ -37,8 +37,9 @@ namespace AppointmentAPI.Services.Implementation.Doctor
         {
             try
             {
+
                 return _repo.GetAll()
-                .Select(DoctorDTO.DoctorDTOMap)
+                .Select(DoctorDTO.DoctorDTOMap)  // ****** Imp this will call the  DoctorDTO.DoctorDTOMap one by one for each record
                 .ToList();
             }
             catch (Exception)

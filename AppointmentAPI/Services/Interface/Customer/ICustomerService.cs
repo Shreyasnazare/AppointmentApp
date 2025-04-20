@@ -1,5 +1,6 @@
 ﻿using AppointmentAPI.DAL.Entity.Customer;
 using AppointmentAPI.Models.Customer;
+using AppointmentAPI.Models.Response;
 
 namespace AppointmentAPI.Services.Interface.Customer
 {
@@ -7,6 +8,7 @@ namespace AppointmentAPI.Services.Interface.Customer
     {
 
         CustomerModel GetCustomerByEmail(string email);
+         Response UpdateCustomer(CustomerModel req);
 
     }
 }
