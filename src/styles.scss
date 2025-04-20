@@ -1,1 +1,74 @@
-/* You can add global styles to this file, and also import other style files */
+/* styles.scss */
+
+:root {
+    --container-background: #2c2f33;
+    --font-size-large: 1.5rem;
+    --container-padding:15px;
+    --button-background-color:#2C2CC9;
+    --input-disbaled:#444 !important
+  }
+
+body {
+    background-color: #121212; // standard dark theme background
+    color: #ffffff;            // white text
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+  }
+
+  * {
+    color: inherit;
+    font-size: 14px;
+  }
+
+input , textarea {
+    padding: 5px;
+    border: 1px solid #ccc;
+    border-radius: 2px;    
+    background-color: #1e1e1e; // dark gray input background
+    box-sizing: border-box;
+    transition: border-color 0.3s;
+  
+    &:focus {
+      border-color: #007bff;
+      outline: none;
+    }
+  }
+
+  input[type="date"] {
+    width:175px;
+  }
+
+  textarea{
+    min-height: 75px;
+  }
+
+  button {
+    background-color: var(--button-background-color);  // dark gray (neutral)
+    color: #ffffff;             // white text for contrast
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  
+    &:hover {
+      background-color: #3d3d3d;  // slightly lighter on hover
+    }
+  
+    &:active {
+      background-color: #1a1a1a;  // darker on click
+    }
+  
+    &:disabled {
+      background-color: var(--input-disbaled);
+      color: #aaa;
+      cursor: not-allowed;
+    }
+  }
+
+
+  input:disabled , textarea:disabled {
+    background-color: var(--input-disbaled);
+    color: #888;
+    cursor: not-allowed;
+  }

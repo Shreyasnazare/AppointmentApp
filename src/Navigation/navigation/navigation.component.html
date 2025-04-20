@@ -1,0 +1,24 @@
+<div class="layout">
+    <div class="sidebar" [class.collapsed]="isCollapsed">
+      <button style="padding:0px" class="toggle-btn" (click)="toggleSidebar()">☰</button>
+  
+      <nav>
+        <a
+          routerLink="/customers"
+          routerLinkActive="active"
+          class="nav-link"
+          [routerLinkActiveOptions]="{ exact: true }"
+        >
+          <span class="icon">➤ &nbsp;</span>
+          <span class="label" *ngIf="!isCollapsed">Customers</span>
+        </a>
+      
+        <!-- Add more links -->
+      </nav>
+    </div>
+  
+    <div class="main-content">
+      <router-outlet></router-outlet>
+    </div>
+  </div>
+  

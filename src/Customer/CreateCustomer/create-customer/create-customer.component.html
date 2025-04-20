@@ -1,0 +1,93 @@
+
+<app-navigation-heading>Customer Details</app-navigation-heading>
+
+<form [formGroup]="customerForm" (ngSubmit)="submitForm()">
+
+    <div class="container">
+
+
+        <div class="container-item">
+            <div>
+                <label>First Name <span class="mandatory">*</span></label>
+            </div>
+            <div>
+                <input  formControlName="FirstName" type="text" />
+                <div class="warning-msg" *ngIf="customerForm.get('FirstName')?.touched && customerForm.get('FirstName')?.invalid">
+                    First Name is required.
+                </div>
+            </div>
+        </div>
+
+
+        <div class="container-item">
+            <div>
+                <label>Last Name <span class="mandatory">*</span></label>
+            </div>
+            <div>
+                <input  formControlName="LastName"  type="text" />
+                <div class="warning-msg" *ngIf="customerForm.get('LastName')?.touched && customerForm.get('LastName')?.invalid">
+                    Last Name is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="container-item">
+            <div>
+                <label>Email <span class="mandatory">*</span></label>
+            </div>
+            <div>
+                <input [disabled]="true"  formControlName="Email" type="email" />
+                <div class="warning-msg" *ngIf="customerForm.get('Email')?.touched && customerForm.get('Email')?.invalid">
+                    <div *ngIf="customerForm.get('Email')?.errors?.['required']">Email is required.</div>
+                    <div *ngIf="customerForm.get('Email')?.errors?.['email']">Enter a valid email.</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-item">
+            <div>
+                <label>Address <span class="mandatory">*</span></label>
+            </div>
+            <div>
+                <textarea  formControlName="Address" type="text" ></textarea>
+                <div class="warning-msg" *ngIf="customerForm.get('Address')?.touched && customerForm.get('Address')?.invalid">
+                    Address is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="container-item">
+            <div>
+                <label>Date of Birth <span class="mandatory">*</span></label>
+            </div>
+            <div>
+                <input  formControlName="DOB" type="date" />
+                <div class="warning-msg" *ngIf="customerForm.get('DOB')?.touched && customerForm.get('DOB')?.invalid">
+                    Date of Birth is required.
+                </div>
+            </div>
+        </div>
+
+        <div class="container-item">
+            <div>
+                <label>Contact <span class="mandatory">*</span></label>
+            </div>
+            <div>
+                <input  formControlName="Contact" type="text" />
+                <div class="warning-msg" *ngIf="customerForm.get('Contact')?.touched && customerForm.get('Contact')?.invalid">
+                    Contact is required.
+                </div>
+            </div>
+
+        </div>
+
+        <div class="container-item">
+            <div>                
+            </div>
+            <div>
+                <button type="submit" [disabled]="customerForm.invalid">{{this.mode.toUpperCase() == "UPDATE" ? "Update" :"Save"}}</button>
+            </div>
+        </div>
+    </div>
+    
+</form>

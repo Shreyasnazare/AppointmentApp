@@ -1,0 +1,27 @@
+.container-item {
+    display: grid;
+    grid-template-columns: 150px 200px;
+    width: 50%;
+    padding: 8px;
+    gap:30px
+}
+
+.container {
+
+    display: flex;
+    flex-direction: column;
+    background-color: var(--container-background);
+    width: fit-content;
+    padding: var(--container-padding);
+
+}
+
+.warning-msg
+{
+    color: red;
+}
+
+.mandatory
+{
+    color:red;
+}
