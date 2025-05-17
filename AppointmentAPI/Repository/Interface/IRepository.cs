@@ -4,13 +4,13 @@
     {
         IEnumerable<T> GetAll();
 
-        T Get(int id);
+        T Get(long id);
 
         void Update(T entity);
 
         void Insert(T entity);
 
-        void Delete(int id);
+        void Delete(long id);
 
         int SaveChanges();
 

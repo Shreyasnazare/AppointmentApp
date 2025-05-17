@@ -8,6 +8,7 @@ using Microsoft.IdentityModel.Tokens;
 using System.Linq;
 using AppointmentAPI.Models.Customer;
 using AppointmentAPI.Helper;
+using AppointmentAPI.DAL.Entity.Doctor;
 namespace AppointmentAPI.Controllers
 {
     /*[ApiController]  // Commented this because the 
@@ -21,9 +22,11 @@ namespace AppointmentAPI.Controllers
 
 
         IDoctorService _drService;
-        public DoctorController(IDoctorService drService)
+        IDoctorSlotService _drSlotService;
+        public DoctorController(IDoctorService drService,IDoctorSlotService drSlotService)
         {
             _drService = drService;
+            _drSlotService = drSlotService;
         }
 
         [HttpPost("CreateDoctor")]
@@ -85,11 +88,11 @@ namespace AppointmentAPI.Controllers
 
 
 
-        [HttpGet("GetDoctorByEmail")]
+        [HttpGet("GetDoctorByEmail/{email}")]
         [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ResponseV2<DoctorModelRes>))]
         [ProducesResponseType(StatusCodes.Status404NotFound)]
         [ProducesResponseType(StatusCodes.Status500InternalServerError)]
-        public IActionResult GetDoctorByEmail([FromBody] string email)
+        public IActionResult GetDoctorByEmail([FromRoute] string email)
         {
             try
             {
@@ -98,6 +101,73 @@ namespace AppointmentAPI.Controllers
             catch (Exception ex)
             {
                 return StatusCode(500, new { message = "An unexpected error occurred at GetDoctorByEmail.", error = ex.Message });
+            }
+        }
+
+        [HttpGet("GetDoctorDetails/{doctorID}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(ResponseV2<DoctorModelRes>))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult GetDoctorDetails([FromRoute] string doctorID)
+        {
+            try
+            {
+                return Ok(_drService.Get(long.Parse(doctorID)));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An unexpected error occurred at GetDoctorDetails.", error = ex.Message });
+            }
+        }
+
+
+        [HttpGet("GetDoctorSlots/{doctorID}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DoctorSlotsTiming))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult GetDoctorSlots([FromRoute] string doctorID)
+        {
+            try
+            {
+                return Ok(_drSlotService.GetDoctorSlots(doctorID));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An unexpected error occurred at GetDoctorSlots.", error = ex.Message });
+            }
+        }
+
+
+        [HttpGet("GetDoctorRatings/{doctorID}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DoctorRating))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult GetDoctorRatings([FromRoute] string doctorID)
+        {
+            try
+            {
+                return Ok(_drService.GetDoctorRatings(doctorID));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An unexpected error occurred at GetDoctorRatings.", error = ex.Message });
+            }
+        }
+
+
+        [HttpGet("GetDoctorSpecialisation/{doctorID}")]
+        [ProducesResponseType(StatusCodes.Status200OK, Type = typeof(DoctorSpecialisation))]
+        [ProducesResponseType(StatusCodes.Status404NotFound)]
+        [ProducesResponseType(StatusCodes.Status500InternalServerError)]
+        public IActionResult GetDoctorSpecialisation([FromRoute] string doctorID)
+        {
+            try
+            {
+                return Ok(_drService.GetDoctorSpecialisation(doctorID));
+            }
+            catch (Exception ex)
+            {
+                return StatusCode(500, new { message = "An unexpected error occurred at GetDoctorSpecialisation.", error = ex.Message });
             }
         }
 

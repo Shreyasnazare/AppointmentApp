@@ -2,6 +2,8 @@
 using AppointmentAPI.DAL.Entity.Doctor;
 using AppointmentAPI.Repository.Interface;
 using AppointmentAPI.Repository.Interface.Doctor;
+using Microsoft.Data.SqlClient;
+using Microsoft.EntityFrameworkCore;
 
 namespace AppointmentAPI.Repository.Implementation.Doctor
 {
@@ -15,6 +17,34 @@ namespace AppointmentAPI.Repository.Implementation.Doctor
           return  _db.DoctorDetails.Where(x => x.Email == email).FirstOrDefault();
         }
 
-       
+        DoctorRating IDoctorRepository.GetDoctorRatings(string doctorID)
+        {
+            try {
+                var doctorIdParam = new SqlParameter("@DoctorID", int.Parse(doctorID));
+
+                var result = _db.Set<DoctorRating>()
+                    .FromSqlRaw("EXEC GetDoctorRating @DoctorID", doctorIdParam)
+                    .AsEnumerable() // Ensures the query is executed
+                   .FirstOrDefault(); // Gets the first (or only) record;
+
+                return result;// as DoctorRating;
+
+            }
+            catch (Exception) { throw; }
+        }
+
+        List<DoctorSpecialisation> IDoctorRepository.GetDoctorSpecialisation(string doctorID)
+        {
+            try {
+                var doctorIdParam = new SqlParameter("@DoctorID", int.Parse(doctorID));
+
+                var result = _db.Set<DoctorSpecialisation>()
+                    .FromSqlRaw("EXEC GetDoctorSpecialisation @DoctorID", doctorIdParam)
+                    .ToList();
+
+                return result;
+            }
+            catch (Exception) { throw; }
+        }
     }
 }

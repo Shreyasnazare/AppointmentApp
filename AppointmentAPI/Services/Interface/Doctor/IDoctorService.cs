@@ -14,8 +14,11 @@ namespace AppointmentAPI.Services.Interface.Doctor
         Task<Response> UpdateDoctorDetail(DoctorModelReq req);
 
         List<DoctorModelRes> GetAllDoctor();
-       
-        
+
+        DoctorRating GetDoctorRatings(string doctorID);
+        List<DoctorSpecialisation> GetDoctorSpecialisation(string doctorID);
+
+
 
 
 

@@ -70,8 +70,11 @@ namespace AppointmentAPI.Services.Implementation.Doctor
                     ValidateImage(req.ImageFile, res);
                     if (!res.success) return res;
 
-                    details.ImagePath = await UploadImage(req.ImageFile, res);
-                    if (string.IsNullOrEmpty(details.ImagePath))
+
+                    details.Image = await ConvertToBase64Async(req.ImageFile);
+
+                   // details.ImagePath = await UploadImage(req.ImageFile, res);
+                    if (string.IsNullOrEmpty(details.Image))
                     {
                         res.success = false;
                         res.message = "Failed to upload image";
@@ -109,8 +112,9 @@ namespace AppointmentAPI.Services.Implementation.Doctor
                     ValidateImage(req.ImageFile, res);
                     if (!res.success) return res;
 
-                    details.ImagePath = await UploadImage(req.ImageFile, res);
-                    if (string.IsNullOrEmpty(details.ImagePath))
+                    details.Image = await ConvertToBase64Async(req.ImageFile);
+                    //  details.ImagePath = await UploadImage(req.ImageFile, res);
+                    if (string.IsNullOrEmpty(details.Image))
                     {
                         res.success = false;
                         res.message = "Failed to upload image";
@@ -119,7 +123,7 @@ namespace AppointmentAPI.Services.Implementation.Doctor
                 }
                 _repo.Update(details);
                 _repo.SaveChanges();
-                DeleteImage(existingDetails.ImagePath); //delete existing image if any
+                //DeleteImage(existingDetails.ImagePath); //delete existing image if any
                 res.success = true;
                 res.message = "Doctor details updated successfully.";
                 return res;
@@ -154,6 +158,8 @@ namespace AppointmentAPI.Services.Implementation.Doctor
                     res.success = false;
                     return;
                 }
+
+                res.success = true;
             }
             catch (Exception)
             {
@@ -194,6 +200,20 @@ namespace AppointmentAPI.Services.Implementation.Doctor
         }
 
 
+        public async Task<string> ConvertToBase64Async(IFormFile file)
+        {
+            if (file == null || file.Length == 0)
+                return null;
+
+            using (var memoryStream = new MemoryStream())
+            {
+                await file.CopyToAsync(memoryStream);
+                var fileBytes = memoryStream.ToArray();
+                string base64String = Convert.ToBase64String(fileBytes);
+                return base64String;
+            }
+        }
+
         public void DeleteImage(string imagePath)
         {
             try
@@ -213,6 +233,22 @@ namespace AppointmentAPI.Services.Implementation.Doctor
 
                 throw;
             }
+        }
+
+        DoctorRating IDoctorService.GetDoctorRatings(string doctorID)
+        {
+            try {
+                return _repo.GetDoctorRatings(doctorID);
+            }
+            catch (Exception) { throw; }
+        }
+
+        List<DoctorSpecialisation> IDoctorService.GetDoctorSpecialisation(string doctorID)
+        {
+            try {
+                return _repo.GetDoctorSpecialisation(doctorID);
+            }
+            catch (Exception) { throw; }
         }
     }
 }

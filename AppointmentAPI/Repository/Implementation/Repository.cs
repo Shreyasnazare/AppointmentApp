@@ -13,7 +13,7 @@ namespace AppointmentAPI.Repository.Implementation
             _db = db;
         }
 
-        public void Delete(int id)
+        public void Delete(long id)
         {
             var entity = _db.Set<T>().Find(id);
             if (entity != null)
@@ -22,7 +22,7 @@ namespace AppointmentAPI.Repository.Implementation
             }
         }
 
-        public T Get(int id)
+        public T Get(long id)
         {
             return _db.Set<T>().Find(id);
         }

@@ -15,7 +15,7 @@ namespace AppointmentAPI.DAL.Entity.Doctor
         public string? ActiveYN { get; set; }
 
         public DateOnly? CareerStart { get; set; }
-        public string? ImagePath { get; set; }
+        public string? Image { get; set; }
         public double? ConsultingFees { get; set; }
 
         public string? Hospital { get; set; }

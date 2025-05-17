@@ -37,12 +37,14 @@ namespace AppointmentAPI.Services
 
             services.AddScoped<IRepository<DoctorDetails>, Repository<DoctorDetails>>();
 
+            services.AddScoped<IRepository<DoctorSlots>, Repository<DoctorSlots>>();
+            services.AddScoped<IDoctorSlotsRepository, DoctorSlotsRepository>();
 
 
             //Services
             services.AddScoped<ICustomerService, CustomerService>();
             services.AddScoped<IDoctorService, DoctorService>();
-
+            services.AddScoped<IDoctorSlotService, DoctorSlotsService>();
 
         }
     }

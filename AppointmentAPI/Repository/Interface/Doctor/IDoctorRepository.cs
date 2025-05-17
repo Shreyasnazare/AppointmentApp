@@ -7,6 +7,12 @@ namespace AppointmentAPI.Repository.Interface.Doctor
     public interface IDoctorRepository : IRepository<DoctorDetails>
     {
 
-        DoctorDetails GetDoctorDetails(string email);        
+        DoctorDetails GetDoctorDetails(string email);
+
+        DoctorRating GetDoctorRatings(string doctorID);
+        List<DoctorSpecialisation> GetDoctorSpecialisation(string doctorID);
+
+
+
     }
 }

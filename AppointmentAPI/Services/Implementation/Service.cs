@@ -17,12 +17,12 @@ namespace AppointmentAPI.Services.Implementation
         _repo.Insert(Entity);
         }
 
-        public void Delete(int id)
+        public void Delete(long id)
         {
             _repo.Delete(id);
         }
 
-        public T Get(int id)
+        public T Get(long id)
         {
           return _repo.Get(id);
         }

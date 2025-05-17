@@ -37,31 +37,35 @@ namespace AppointmentAPI.Models.Doctor
 
     public class DoctorModelRes
     {
-        [Required]
+
+        
+        public string? DoctorID { get; set; }
+
+        
         public string? FirstName { get; set; }
 
-        [Required]
+        
         public string? LastName { get; set; }
 
-        [Required]
+       
         public string? Email { get; set; }
 
-        [Required]
+      
         public string? Qualification { get; set; }
-        [Required]
+        
         public DateOnly? DOB { get; set; }
-        [Required]
+        
         public string? Contact { get; set; }
-        [Required]
+        
         public DateOnly? CareerStart { get; set; }
-        [Required]
+       
         public double? ConsultingFees { get; set; }
-        [Required]
+     
 
         public string? Hospital { get; set; }
 
-        [Required]
-        public string? ImagePath { get; set; }
+       
+        public string? Image { get; set; }
     }
 
 }

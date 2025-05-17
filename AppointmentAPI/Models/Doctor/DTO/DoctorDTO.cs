@@ -7,7 +7,7 @@ namespace AppointmentAPI.Models.Doctor.DTO
 
         public static  DoctorModelRes DoctorDTOMap(DoctorDetails req)
         {
-           return new DoctorModelRes
+            return new DoctorModelRes
             {
                 CareerStart = req.CareerStart,
                 ConsultingFees = req.ConsultingFees,
@@ -16,9 +16,10 @@ namespace AppointmentAPI.Models.Doctor.DTO
                 Email = req.Email,
                 FirstName = req.FirstName,
                 Hospital = req.Hospital,
-                ImagePath = req.ImagePath,
+                Image = req.Image,
                 LastName = req.LastName,
-                Qualification = req.Qualification
+                Qualification = req.Qualification,
+                DoctorID = req.DoctorID.ToString()
 
             };
 
